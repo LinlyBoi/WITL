@@ -11,13 +11,6 @@ CREATE TABLE users(U_ID SERIAL PRIMARY KEY,
                   U_password varchar(255) NOT NULL
                   )
 
--- Forgot Relation between User and Station
--- "Preferred Stations", need to rework ERD
--- Anyhow, Insert a new table as relation
--- M:N (i.e. Separate Table)
--- Where U_ID + S_ID (User ID, Station ID)
--- are compound keys
-
 -- Table for Stations
 -- S_IT    => Station ID in fashion of: 3xx denotes taking both lines 1 and 2,
 --                                      2xx denotes taking Line 2 Only,
@@ -30,7 +23,6 @@ CREATE TABLE users(U_ID SERIAL PRIMARY KEY,
 -- Comment regarding the "GEOGRAPHY" data type
 -- https://stackoverflow.com/questions/30322924/how-to-store-longitude-latitude-as-a-geography-in-sql-server-2014
 -- Double check for later purposes
--- linly pls no murder
 CREATE TABLE stations(S_ID SERIAL PRIMARY KEY,
                       name_ar varchar(255) NOT NULL,
                       name_en varchar(255) NOT NULL,
@@ -39,3 +31,32 @@ CREATE TABLE stations(S_ID SERIAL PRIMARY KEY,
                       -- instead of multiple values
                       geo_loc GEOGRAPHY
                       )
+
+-- Forgot Relation between User and Station
+-- "Preferred Stations", need to rework ERD
+-- Anyhow, Insert a new table as relation
+-- M:N (i.e. Separate Table)
+-- Where U_ID + S_ID (User ID, Station ID)
+-- are compound keys
+
+CREATE TABLE prefers(pref_UID SERIAL,
+                     pref_SID SERIAL,
+                     CONSTRAINT fk1 FOREIGN KEY (pref_UID) REFERENCES users(U_ID),
+                     CONSTRAINT fk2 FOREIGN KEY (pref_SID) REFERENCES stations(S_ID),
+                     CONSTRAINT pk1 PRIMARY KEY (pref_UID, pref_SID)
+                     )
+
+-- Ought to create table for "Arrival"
+-- Except I dond see how it'd be implemented properly
+-- but do take a look at whatever the mcfuck i write below
+
+-- Documenting the Table
+-- time_of_day => Time object, nanosecond accuracy, y'all handle it idk
+-- week_day    => varchar as {Mon, Tue, Wed}, Could probs just encode with 0 -> 6
+-- tram_line   => int ranging 1 -> 4
+-- fill_status => Boolean, 1 full, 0 not as full
+CREATE TABLE arrival(time_of_day TIME,
+                     week_day varchar(255),
+                     tram_line INTEGER,
+                     fill_status BOOLEAN
+                     )
