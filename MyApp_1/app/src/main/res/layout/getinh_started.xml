@@ -1,0 +1,282 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		bxs_wallet
+	 *	@date 		Saturday 28th of October 2023 06:22:49 AM
+	 *	@title 		Page 1
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/getinh_started" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+
+
+			<RelativeLayout android:id="@+id/page_getinh_started_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<View   android:id="@+id/_bg__getinh_started_ek2"
+					android:background="@drawable/_bg__getinh_started_ek2_shape"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="428dp"
+					android:layout_height="926dp" />
+
+				<ImageView android:id="@+id/_image_4"
+					android:src="@drawable/_image_4"
+					android:contentDescription="_image_4"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="-245dp"
+					android:layout_width="428dp"
+					android:layout_height="827dp" />
+
+
+				<RelativeLayout android:id="@+id/iphone_status_bar"
+					android:layout_marginTop="0dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg__iphone_status_bar_ek1"
+						android:background="@drawable/_bg__iphone_status_bar_ek1_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="428dp"
+						android:layout_height="44dp" />
+
+					<ImageView android:id="@+id/wifi"
+						android:src="@drawable/wifi"
+						android:contentDescription="wifi"
+						 android:layout_marginStart="352dp"
+						android:layout_marginTop="17dp"
+						android:layout_width="18dp"
+						android:layout_height="13dp" />
+
+
+					<RelativeLayout android:id="@+id/__battery"
+						android:layout_marginTop="17dp"
+						android:layout_marginStart="375dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg____battery_ek1"
+							android:background="@drawable/_bg____battery_ek1_shape"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="26.6dp"
+							android:layout_height="12.5dp" />
+
+						<ImageView android:id="@+id/fill"
+							android:src="@drawable/fill"
+							android:contentDescription="fill"
+							 android:layout_marginStart="1.92dp"
+							android:layout_marginTop="1.92dp"
+							android:layout_width="20.19dp"
+							android:layout_height="8.65dp" />
+
+						<ImageView android:id="@+id/outline"
+							android:src="@drawable/outline"
+							android:contentDescription="outline"
+							 android:alpha="0.40000000596046"
+							android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="26.6dp"
+							android:layout_height="12.5dp" />
+
+					</RelativeLayout>
+
+					<ImageView android:id="@+id/reception"
+						android:src="@drawable/reception"
+						android:contentDescription="reception"
+						 android:layout_marginStart="328dp"
+						android:layout_marginTop="18dp"
+						android:layout_width="18.15dp"
+						android:layout_height="11dp" />
+
+					<TextView android:id="@+id/time"
+						android:textStyle="bold"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="18sp"
+						android:textColor="@color/_bg__getinh_started_ek2_color"
+						android:layout_marginLeft="36dp"
+						android:layout_marginTop="15dp"
+						android:layout_width="52dp"
+						android:layout_height="23.8dp"
+						android:text="@string/time_string"
+						 />
+
+				</RelativeLayout>
+
+				<ImageView android:id="@+id/rectangle_43"
+					android:src="@drawable/rectangle_43"
+					android:contentDescription="rectangle_43"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="519dp"
+					android:layout_width="428dp"
+					android:layout_height="407dp" />
+
+				<View   android:id="@+id/_home_indicator"
+					android:background="@drawable/_home_indicator_shape"
+					 android:layout_marginStart="155dp"
+					android:layout_marginTop="915dp"
+					android:layout_width="134dp"
+					android:layout_height="5dp" />
+
+				<TextView android:id="@+id/alexandria_s_tram_prediction"
+					android:textStyle="bold"
+					android:textSize="24sp"
+					android:textColor="@color/_bg__iphone_status_bar_ek1_color"
+					android:layout_marginLeft="60dp"
+					android:layout_marginTop="559dp"
+					android:layout_width="338.4dp"
+					android:layout_height="30.4dp"
+					android:text="@string/alexandria_s_tram_prediction_string"
+					 />
+
+
+				<RelativeLayout android:id="@+id/group_15"
+					android:layout_marginTop="68dp"
+					android:layout_marginStart="339dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg___group_15_ek1"
+						android:background="@drawable/_bg___group_15_ek1_shape"
+						 android:layout_marginStart="-339dp"
+						android:layout_marginTop="-68dp"
+						android:layout_width="60.21dp"
+						android:layout_height="23dp" />
+
+					<TextView android:id="@+id/skip"
+						android:textSize="22sp"
+						android:textColor="@color/_bg__getinh_started_ek2_color"
+						android:layout_marginLeft="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="60.2dp"
+						android:layout_height="29.2dp"
+						android:text="@string/skip_string"
+						 />
+
+					<ImageView android:id="@+id/vector"
+						android:src="@drawable/vector"
+						android:contentDescription="vector"
+						 android:layout_marginStart="50dp"
+						android:layout_marginTop="4dp"
+						android:layout_width="10.21dp"
+						android:layout_height="17.5dp" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout android:id="@+id/group_13"
+					android:layout_marginTop="492dp"
+					android:layout_marginStart="191dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg__group_13_ek1"
+						android:background="@drawable/_bg__group_13_ek1_shape"
+						 android:layout_marginStart="-191dp"
+						android:layout_marginTop="-492dp"
+						android:layout_width="46dp"
+						android:layout_height="12dp" />
+
+					<View   android:id="@+id/ellipse_12"
+						android:background="@drawable/ellipse_12_shape"
+						 android:alpha="0.5"
+						 android:layout_marginStart="17dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="11.93dp"
+						android:layout_height="12dp" />
+
+					<View   android:id="@+id/ellipse_14"
+						android:background="@drawable/ellipse_14_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="11.93dp"
+						android:layout_height="12dp" />
+
+					<View   android:id="@+id/ellipse_13"
+						android:background="@drawable/ellipse_13_shape"
+						 android:alpha="0.5"
+						 android:layout_marginStart="34dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="11.93dp"
+						android:layout_height="12dp" />
+
+				</RelativeLayout>
+
+				<TextView android:id="@+id/this_app_will_provide_accurate_tram_arriving_time_at_selected_stations"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="18sp"
+					android:textColor="@color/_bg__iphone_status_bar_ek1_color"
+					android:layout_marginLeft="25dp"
+					android:layout_marginTop="613dp"
+					android:layout_width="379dp"
+					android:layout_height="74.8dp"
+					android:text="@string/this_app_will_provide_accurate_tram_arriving_time_at_selected_stations_string"
+					 />
+
+				<View   android:id="@+id/_rectangle_8"
+					android:background="@drawable/_rectangle_8_shape"
+					 android:layout_marginStart="28dp"
+					android:layout_marginTop="788dp"
+					android:layout_width="372dp"
+					android:layout_height="60dp" />
+
+
+				<RelativeLayout android:id="@+id/group_12"
+					android:layout_marginTop="790dp"
+					android:layout_marginStart="153dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg___group_12_ek1"
+						android:background="@drawable/_bg___group_12_ek1_shape"
+						 android:layout_marginStart="-153dp"
+						android:layout_marginTop="-790dp"
+						android:layout_width="128dp"
+						android:layout_height="55dp" />
+
+					<TextView android:id="@+id/get_started"
+						android:textStyle="bold"
+						android:textSize="22sp"
+						android:textColor="@color/_bg__getinh_started_ek2_color"
+						android:layout_marginLeft="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="146.2dp"
+						android:layout_height="61.2dp"
+						android:text="@string/get_started_string"
+						 />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
