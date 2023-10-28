@@ -9,10 +9,10 @@ CREATE TABLE users(U_ID SERIAL PRIMARY KEY,
                   last_name varchar(255) NOT NULL,
                   U_email varchar(255) NOT NULL UNIQUE,
                   U_password varchar(255) NOT NULL
-                  )
+                  );
 
 -- Table for Stations
--- S_IT    => Station ID in fashion of: 3xx denotes taking both lines 1 and 2,
+-- S_ID    => Station ID in fashion of: 3xx denotes taking both lines 1 and 2,
 --                                      2xx denotes taking Line 2 Only,
 --                                      1xx denotes taking Line 1 Only.
 -- name_ar => Station's name in Arabic
@@ -29,8 +29,8 @@ CREATE TABLE stations(S_ID SERIAL PRIMARY KEY,
                       -- Debating whether or not to denote
                       -- Tram lines as 1, 2, or 3
                       -- instead of multiple values
-                      geo_loc GEOGRAPHY
-                      )
+                      location GEOGRAPHY
+                      );
 
 -- Forgot Relation between User and Station
 -- "Preferred Stations", need to rework ERD
@@ -44,7 +44,7 @@ CREATE TABLE prefers(pref_UID SERIAL,
                      CONSTRAINT fk1 FOREIGN KEY (pref_UID) REFERENCES users(U_ID),
                      CONSTRAINT fk2 FOREIGN KEY (pref_SID) REFERENCES stations(S_ID),
                      CONSTRAINT pk1 PRIMARY KEY (pref_UID, pref_SID)
-                     )
+                     );
 
 -- Ought to create table for "Arrival"
 -- Except I dond see how it'd be implemented properly
@@ -56,7 +56,10 @@ CREATE TABLE prefers(pref_UID SERIAL,
 -- tram_line   => int ranging 1 -> 4
 -- fill_status => Boolean, 1 full, 0 not as full
 CREATE TABLE arrival(time_of_day TIME,
-                     week_day varchar(255),
+                     week_day INTEGER,
                      tram_line INTEGER,
                      fill_status BOOLEAN
-                     )
+                     CONSTRAINT ck PRIMARY KEY (week_day,tram_line)
+                     CONSTRAINT in_week CHECK (week_day >= 0 AND week_day <= 6)
+                     CONSTRAINT valid_line CHECK (tram_line >= 1 AND tram_line <= 4)
+                     );
