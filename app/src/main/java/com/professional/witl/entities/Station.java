@@ -3,7 +3,8 @@ package com.professional.witl.entities;
 import java.util.Date;
 import java.util.List;
 
-public class Station {
+public class Station
+{
     private String sid;
     private String nameEN;
     private String nameAR;
@@ -12,50 +13,62 @@ public class Station {
 
     // Constructors, getters, and setters
 
-    public Station(String sid, String nameEN, String nameAR, String geoLocation, List<String> tramLines) {
+    public Station(String sid, String nameEN, String nameAR, String geoLocation, List<String> tramLines)
+    {
         this.sid = sid;
         this.nameEN = nameEN;
         this.nameAR = nameAR;
         this.geoLocation = geoLocation;
         this.tramLines = tramLines;
     }
-    public String getSid() {
+
+    public String getSid()
+    {
         return sid;
     }
 
-    public void setSid(String sid) {
+    public void setSid(String sid)
+    {
         this.sid = sid;
     }
 
-    public String getNameEN() {
+    public String getNameEN()
+    {
         return nameEN;
     }
 
-    public void setNameEN(String nameEN) {
+    public void setNameEN(String nameEN)
+    {
         this.nameEN = nameEN;
     }
 
-    public String getNameAR() {
+    public String getNameAR()
+    {
         return nameAR;
     }
 
-    public void setNameAR(String nameAR) {
+    public void setNameAR(String nameAR)
+    {
         this.nameAR = nameAR;
     }
 
-    public String getGeoLocation() {
+    public String getGeoLocation()
+    {
         return geoLocation;
     }
 
-    public void setGeoLocation(String geoLocation) {
+    public void setGeoLocation(String geoLocation)
+    {
         this.geoLocation = geoLocation;
     }
 
-    public List<String> getTramLines() {
+    public List<String> getTramLines()
+    {
         return tramLines;
     }
 
-    public void setTramLines(List<String> tramLines) {
+    public void setTramLines(List<String> tramLines)
+    {
         this.tramLines = tramLines;
     }
 }

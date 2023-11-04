@@ -12,12 +12,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.professional.witl.databinding.FragmentSlideshowBinding;
 
-public class SlideshowFragment extends Fragment {
+public class SlideshowFragment extends Fragment
+{
 
     private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState)
+    {
         SlideshowViewModel slideshowViewModel =
                 new ViewModelProvider(this).get(SlideshowViewModel.class);
 
@@ -30,7 +32,8 @@ public class SlideshowFragment extends Fragment {
     }
 
     @Override
-    public void onDestroyView() {
+    public void onDestroyView()
+    {
         super.onDestroyView();
         binding = null;
     }

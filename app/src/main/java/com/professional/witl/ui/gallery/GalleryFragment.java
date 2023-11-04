@@ -12,12 +12,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.professional.witl.databinding.FragmentGalleryBinding;
 
-public class GalleryFragment extends Fragment {
+public class GalleryFragment extends Fragment
+{
 
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState)
+    {
         GalleryViewModel galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
@@ -30,7 +32,8 @@ public class GalleryFragment extends Fragment {
     }
 
     @Override
-    public void onDestroyView() {
+    public void onDestroyView()
+    {
         super.onDestroyView();
         binding = null;
     }
