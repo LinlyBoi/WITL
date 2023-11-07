@@ -18,25 +18,32 @@
 package com.example.myapp_1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
-public class begin_activity extends Activity {
+	public class begin_activity extends Activity {
 
-	
+		private static final int SPLASH_DURATION = 3000; // 3 seconds
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.begin);
 
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.begin);
-
-		
-	
-		
-		//custom code goes here
-	
+			new Handler().postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					// Start the main activity after the splash duration
+					Intent intent = new Intent(begin_activity.this, getinh_started_activity.class);
+					startActivity(intent);
+					finish(); // Close the splash screen activity
+				}
+			}, SPLASH_DURATION);
+		}
 	}
-}
 	
 	

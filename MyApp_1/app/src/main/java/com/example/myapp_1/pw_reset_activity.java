@@ -58,13 +58,6 @@ public class pw_reset_activity extends Activity {
 		
 		_bg__pw_reset_ek2 = (View) findViewById(R.id._bg__pw_reset_ek2);
 		rectangle_38 = (View) findViewById(R.id.rectangle_38);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		enter_the_email_associated_with_your_account_ = (TextView) findViewById(R.id.enter_the_email_associated_with_your_account_);
 		email_address = (TextView) findViewById(R.id.email_address);
 		abcd_gmail_com = (TextView) findViewById(R.id.abcd_gmail_com);

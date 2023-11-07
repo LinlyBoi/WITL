@@ -80,13 +80,6 @@ public class schedule_activity extends Activity {
 
 		
 		_bg__schedule_ek2 = (View) findViewById(R.id._bg__schedule_ek2);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		_vector = (ImageView) findViewById(R.id._vector);
 		schedule_ek3 = (TextView) findViewById(R.id.schedule_ek3);
 		_home_indicator = (View) findViewById(R.id._home_indicator);
@@ -127,7 +120,7 @@ public class schedule_activity extends Activity {
 		
 			public void onClick(View v) {
 				
-				Intent nextScreen = new Intent(getApplicationContext(), home_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(), home2.class);
 				startActivity(nextScreen);
 			
 		

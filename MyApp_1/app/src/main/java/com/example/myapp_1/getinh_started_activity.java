@@ -62,30 +62,20 @@ public class getinh_started_activity extends Activity {
 		
 		_bg__getinh_started_ek2 = (View) findViewById(R.id._bg__getinh_started_ek2);
 		_image_4 = (ImageView) findViewById(R.id._image_4);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		rectangle_43 = (ImageView) findViewById(R.id.rectangle_43);
 		_home_indicator = (View) findViewById(R.id._home_indicator);
 		alexandria_s_tram_prediction = (TextView) findViewById(R.id.alexandria_s_tram_prediction);
-		_bg___group_15_ek1 = (View) findViewById(R.id._bg___group_15_ek1);
 		skip = (TextView) findViewById(R.id.skip);
 		vector = (ImageView) findViewById(R.id.vector);
-		_bg__group_13_ek1 = (View) findViewById(R.id._bg__group_13_ek1);
 		ellipse_12 = (View) findViewById(R.id.ellipse_12);
 		ellipse_14 = (View) findViewById(R.id.ellipse_14);
 		ellipse_13 = (View) findViewById(R.id.ellipse_13);
 		this_app_will_provide_accurate_tram_arriving_time_at_selected_stations = (TextView) findViewById(R.id.this_app_will_provide_accurate_tram_arriving_time_at_selected_stations);
 		_rectangle_8 = (View) findViewById(R.id._rectangle_8);
-		_bg___group_12_ek1 = (View) findViewById(R.id._bg___group_12_ek1);
 		get_started = (TextView) findViewById(R.id.get_started);
-	
-		
-		_image_4.setOnClickListener(new View.OnClickListener() {
+
+
+		skip.setOnClickListener(new View.OnClickListener() {
 		
 			public void onClick(View v) {
 				
@@ -95,20 +85,6 @@ public class getinh_started_activity extends Activity {
 		
 			}
 		});
-		
-		
-		_home_indicator.setOnClickListener(new View.OnClickListener() {
-		
-			public void onClick(View v) {
-				
-				Intent nextScreen = new Intent(getApplicationContext(), begin_activity.class);
-				startActivity(nextScreen);
-			
-		
-			}
-		});
-		
-		
 		_rectangle_8.setOnClickListener(new View.OnClickListener() {
 		
 			public void onClick(View v) {

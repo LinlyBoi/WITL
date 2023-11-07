@@ -17,6 +17,7 @@
 
 package com.example.myapp_1;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -80,6 +81,7 @@ public class notifications_activity extends Activity {
 	private ImageView vector_ek6;
 	private View ellipse_22;
 
+	@SuppressLint("MissingInflatedId")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -88,13 +90,6 @@ public class notifications_activity extends Activity {
 
 		
 		_bg__notifications_ek2 = (View) findViewById(R.id._bg__notifications_ek2);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		vector = (ImageView) findViewById(R.id.vector);
 		_notifications_ek3 = (TextView) findViewById(R.id._notifications_ek3);
 		today = (TextView) findViewById(R.id.today);
@@ -109,14 +104,10 @@ public class notifications_activity extends Activity {
 		ellipse_20_ek1 = (View) findViewById(R.id.ellipse_20_ek1);
 		_bg__heroicons_solid_speakerphone_ek3 = (View) findViewById(R.id._bg__heroicons_solid_speakerphone_ek3);
 		vector_ek2 = (ImageView) findViewById(R.id.vector_ek2);
-		_bg__group_13225_ek1 = (View) findViewById(R.id._bg__group_13225_ek1);
 		ellipse_20_ek2 = (View) findViewById(R.id.ellipse_20_ek2);
-		_bg__group_13222_ek1 = (View) findViewById(R.id._bg__group_13222_ek1);
 		ellipse_20_ek3 = (View) findViewById(R.id.ellipse_20_ek3);
 		_bg__heroicons_solid_speakerphone_ek5 = (View) findViewById(R.id._bg__heroicons_solid_speakerphone_ek5);
-		_bg__group_13224_ek1 = (View) findViewById(R.id._bg__group_13224_ek1);
 		ellipse_20_ek4 = (View) findViewById(R.id.ellipse_20_ek4);
-		_bg__group_13226_ek1 = (View) findViewById(R.id._bg__group_13226_ek1);
 		ellipse_20_ek5 = (View) findViewById(R.id.ellipse_20_ek5);
 		vector_ek3 = (ImageView) findViewById(R.id.vector_ek3);
 		vector_ek4 = (ImageView) findViewById(R.id.vector_ek4);
@@ -137,28 +128,27 @@ public class notifications_activity extends Activity {
 		ellipse_21 = (View) findViewById(R.id.ellipse_21);
 		vector_ek6 = (ImageView) findViewById(R.id.vector_ek6);
 		ellipse_22 = (View) findViewById(R.id.ellipse_22);
-	
-		
+
 		_notifications_ek3.setOnClickListener(new View.OnClickListener() {
-		
 			public void onClick(View v) {
-				
-				Intent nextScreen = new Intent(getApplicationContext(), home_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(), home2.class);
 				startActivity(nextScreen);
-			
-		
 			}
 		});
 		
-		
+
+		vector.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent newscreen = new Intent(getApplicationContext(), home2.class);
+				startActivity(newscreen);
+			}
+		});
+
 		_home_indicator.setOnClickListener(new View.OnClickListener() {
-		
 			public void onClick(View v) {
-				
 				Intent nextScreen = new Intent(getApplicationContext(), begin_activity.class);
 				startActivity(nextScreen);
-			
-		
 			}
 		});
 		

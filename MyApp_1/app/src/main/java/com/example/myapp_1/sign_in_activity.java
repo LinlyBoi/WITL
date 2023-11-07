@@ -66,13 +66,6 @@ public class sign_in_activity extends Activity {
 
 		
 		_bg__sign_in_ek2 = (View) findViewById(R.id._bg__sign_in_ek2);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		register = (TextView) findViewById(R.id.register);
 		_bg___eva_arrow_ios_back_fill_ek1 = (View) findViewById(R.id._bg___eva_arrow_ios_back_fill_ek1);
 		vector = (ImageView) findViewById(R.id.vector);

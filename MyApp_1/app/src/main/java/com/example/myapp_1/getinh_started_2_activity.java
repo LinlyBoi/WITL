@@ -62,13 +62,6 @@ public class getinh_started_2_activity extends Activity {
 		
 		_bg__getinh_started_2_ek2 = (View) findViewById(R.id._bg__getinh_started_2_ek2);
 		image_4 = (ImageView) findViewById(R.id.image_4);
-		_bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-		wifi = (ImageView) findViewById(R.id.wifi);
-		_bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-		fill = (ImageView) findViewById(R.id.fill);
-		outline = (ImageView) findViewById(R.id.outline);
-		reception = (ImageView) findViewById(R.id.reception);
-		time = (TextView) findViewById(R.id.time);
 		rectangle_43 = (ImageView) findViewById(R.id.rectangle_43);
 		_home_indicator = (View) findViewById(R.id._home_indicator);
 		find_your_trains_easily_and_buy_tickets_online_ = (TextView) findViewById(R.id.find_your_trains_easily_and_buy_tickets_online_);
@@ -95,13 +88,20 @@ public class getinh_started_2_activity extends Activity {
 		
 			}
 		});
-		
+
+		skip.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent nextscreen  = new Intent(getApplicationContext(), home2.class);
+				startActivity(nextscreen);
+			}
+		});
 		
 		_rectangle_8.setOnClickListener(new View.OnClickListener() {
 		
 			public void onClick(View v) {
 				
-				Intent nextScreen = new Intent(getApplicationContext(), home_activity.class);
+				Intent nextScreen = new Intent(getApplicationContext(),home2.class);
 				startActivity(nextScreen);
 			
 		

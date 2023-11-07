@@ -55,4 +55,20 @@
 	<color name="rectangle_5_color">#FFFFFF</color>
 	<color name="hurstbridge_line_color">#616161</color>
 	<color name="border_color">#ffffff</color>
+
+
+	<color name="_bg___menu_ek1_color">#000000</color>
+	<color name="trip_icon_ellipse_color">#E9F3F9</color>
+
+	<color name="_bg___arrival_group_ek1_color">#000000</color>
+	<color name="arrival_background_color">#D1E6E9</color>
+	<color name="_bg__hamburger_menu_ek2_color">#FFFFFF</color>
+	<color name="side_bar_blue_frame_color">#0075CA</color>
+	<color name="_bg__side_bar_icon_ek1_color">#000000</color>
+	<color name="station_icon_ellipse_color">#E9F3F9</color>
+	<color name="_bg__choose_ek2_color">#FFFFFF</color>
+	<color name="_bg__menu_ek1_color">#000000</color>
+
+	<color name="_bg__trip_parta_ek1_color">#000000</color>
+	<color name="tripa_color">#FFFFFF</color>
 </resources>

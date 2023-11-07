@@ -41,13 +41,6 @@ public class login_page_activity extends Activity {
         _bg__login_page_ek2 = (View) findViewById(R.id._bg__login_page_ek2);
         rectangle_7 = (View) findViewById(R.id.rectangle_7);
         rectangle_6 = (View) findViewById(R.id.rectangle_6);
-        _bg__iphone_status_bar_ek1 = (View) findViewById(R.id._bg__iphone_status_bar_ek1);
-        wifi = (ImageView) findViewById(R.id.wifi);
-        _bg____battery_ek1 = (View) findViewById(R.id._bg____battery_ek1);
-        fill = (ImageView) findViewById(R.id.fill);
-        outline = (ImageView) findViewById(R.id.outline);
-        reception = (ImageView) findViewById(R.id.reception);
-        time = (TextView) findViewById(R.id.time);
         username = (TextView) findViewById(R.id.username);
         forgot_password_ = (TextView) findViewById(R.id.forgot_password_);
         password = (TextView) findViewById(R.id.password);

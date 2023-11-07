@@ -7,7 +7,7 @@
 	 *
 	 *	@desc 		
 	 *	@file 		bxs_wallet
-	 *	@date 		Saturday 28th of October 2023 06:29:56 AM
+	 *	@date 		Wednesday 01st of November 2023 06:50:02 PM
 	 *	@title 		Page 1
 	 *	@author 	
 	 *	@keywords 	
@@ -39,49 +39,57 @@
 					android:layout_width="428dp"
 					android:layout_height="926dp" />
 
+				<ImageView
+					android:id="@+id/header"
+					android:src="@drawable/header"
+					android:contentDescription="header"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="428dp"
+					android:layout_height="103dp" />
 
-				<RelativeLayout android:id="@+id/group_17"
-					android:layout_marginTop="501dp"
+
+				<RelativeLayout android:id="@+id/trip_parta"
+					android:layout_marginTop="163dp"
 					android:layout_marginStart="24dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/_bg__group_17_ek1"
-						android:background="@drawable/_bg__group_17_ek1_shape"
+					<View   android:id="@+id/_bg__trip_parta_ek1"
+						android:background="@drawable/_bg__trip_parta_ek1_shape"
 						 android:layout_marginStart="-24dp"
-						android:layout_marginTop="-501dp"
+						android:layout_marginTop="-163dp"
 						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
-					<View   android:id="@+id/rectangle_5"
-						android:background="@drawable/rectangle_5_shape"
+					<View   android:id="@+id/tripa"
+						android:background="@drawable/tripa_shape"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
-						android:layout_width="342dp"
+						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
 
-					<RelativeLayout android:id="@+id/frame"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_location"
 						android:layout_marginTop="17dp"
-						android:layout_marginStart="16dp"
+						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek1"
-							android:background="@drawable/_bg__frame_ek1_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_location_ek1"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
-							android:layout_width="16dp"
+							android:layout_width="17.63dp"
 							android:layout_height="16dp" />
 
-						<ImageView android:id="@+id/subtract"
-							android:src="@drawable/subtract"
-							android:contentDescription="subtract"
-							 android:layout_marginStart="1.67dp"
+						<ImageView android:id="@+id/location"
+							android:src="@drawable/location"
+							android:contentDescription="location"
+							 android:layout_marginStart="1.94dp"
 							android:layout_marginTop="0.33dp"
-							android:layout_width="10.67dp"
+							android:layout_width="11.75dp"
 							android:layout_height="13.33dp" />
 
 					</RelativeLayout>
@@ -89,9 +97,9 @@
 					<TextView android:id="@+id/hurstbridge_line"
 						android:textSize="14sp"
 						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="44dp"
+						android:layout_marginLeft="48dp"
 						android:layout_marginTop="16dp"
-						android:layout_width="198.4dp"
+						android:layout_width="217.21dp"
 						android:layout_height="23.4dp"
 						android:text="@string/hurstbridge_line_string"
 						 />
@@ -99,10 +107,10 @@
 					<TextView android:id="@+id/_12_15_pm___1_19_pm"
 						android:textStyle="bold"
 						android:textSize="16sp"
-						android:textColor="@color/_bg__group_17_ek1_color"
-						android:layout_marginLeft="16dp"
+						android:textColor="@color/_bg__trip_parta_ek1_color"
+						android:layout_marginLeft="18dp"
 						android:layout_marginTop="119dp"
-						android:layout_width="152.6dp"
+						android:layout_width="166.63dp"
 						android:layout_height="26.6dp"
 						android:text="@string/_12_15_pm___1_19_pm_string"
 						 />
@@ -110,44 +118,43 @@
 					<TextView android:id="@+id/_1_hr_4_min"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="284dp"
+						android:layout_marginLeft="290dp"
 						android:layout_marginTop="119dp"
-						android:layout_width="84.6dp"
+						android:layout_width="91.72dp"
 						android:layout_height="26.6dp"
 						android:text="@string/_1_hr_4_min_string"
 						 />
 
-					<TextView android:id="@+id/from_eltham_station"
+					<TextView android:id="@+id/from_victoria"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="52dp"
+						android:layout_marginLeft="57dp"
 						android:layout_marginTop="48dp"
-						android:layout_width="159.6dp"
+						android:layout_width="174.35dp"
 						android:layout_height="26.6dp"
-						android:text="@string/from_eltham_station_string"
+						android:text="@string/from_victoria_string"
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek2"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon"
 						android:layout_marginTop="47dp"
-						android:layout_marginStart="16dp"
+						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek3"
-							android:background="@drawable/_bg__frame_ek3_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek1"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
-							android:layout_width="24dp"
+							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
 						<ImageView android:id="@+id/vector"
-							android:src="@drawable/vector"
+							android:src="@drawable/trip_from"
 							android:contentDescription="vector"
-							 android:layout_marginStart="4dp"
+							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
-							android:layout_width="16dp"
+							android:layout_width="17.63dp"
 							android:layout_height="20dp" />
 
 					</RelativeLayout>
@@ -155,365 +162,282 @@
 					<TextView android:id="@+id/to_melbourne_central_station"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="52dp"
+						android:layout_marginLeft="57dp"
 						android:layout_marginTop="84dp"
-						android:layout_width="225.6dp"
+						android:layout_width="247.06dp"
 						android:layout_height="26.6dp"
 						android:text="@string/to_melbourne_central_station_string"
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek4"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek2"
 						android:layout_marginTop="83dp"
-						android:layout_marginStart="16dp"
+						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek5"
-							android:background="@drawable/_bg__frame_ek5_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek3"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
-							android:layout_width="24dp"
+							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
 						<ImageView android:id="@+id/vector_ek1"
-							android:src="@drawable/vector_ek1"
+							android:src="@drawable/trip_to"
 							android:contentDescription="vector_ek1"
-							 android:layout_marginStart="4dp"
+							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
-							android:layout_width="16dp"
+							android:layout_width="17.63dp"
 							android:layout_height="20dp" />
 
 					</RelativeLayout>
 
-
-					<RelativeLayout android:id="@+id/group_15"
-						android:layout_marginTop="0dp"
-						android:layout_marginStart="0dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__group_15_ek1"
-							android:background="@drawable/_bg__group_15_ek1_shape"
-							 android:layout_marginStart="-24dp"
-							android:layout_marginTop="-501dp"
-							android:layout_width="376.78dp"
-							android:layout_height="157dp" />
-
-						<View   android:id="@+id/rectangle_5_ek1"
-							android:background="@drawable/rectangle_5_ek1_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="376.78dp"
-							android:layout_height="157dp" />
-
-
-						<RelativeLayout android:id="@+id/frame_ek6"
-							android:layout_marginTop="17dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek7"
-								android:background="@drawable/_bg__frame_ek7_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="17.63dp"
-								android:layout_height="16dp" />
-
-							<ImageView android:id="@+id/subtract_ek1"
-								android:src="@drawable/subtract_ek1"
-								android:contentDescription="subtract_ek1"
-								 android:layout_marginStart="1.94dp"
-								android:layout_marginTop="0.33dp"
-								android:layout_width="11.75dp"
-								android:layout_height="13.33dp" />
-
-						</RelativeLayout>
-
-						<TextView android:id="@+id/hurstbridge_line_ek1"
-							android:textSize="14sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="48dp"
-							android:layout_marginTop="16dp"
-							android:layout_width="217.21dp"
-							android:layout_height="23.4dp"
-							android:text="@string/hurstbridge_line_ek1_string"
-							 />
-
-						<TextView android:id="@+id/_12_15_pm___1_19_pm_ek1"
-							android:textStyle="bold"
-							android:textSize="16sp"
-							android:textColor="@color/_bg__group_17_ek1_color"
-							android:layout_marginLeft="18dp"
-							android:layout_marginTop="119dp"
-							android:layout_width="166.63dp"
-							android:layout_height="26.6dp"
-							android:text="@string/_12_15_pm___1_19_pm_ek1_string"
-							 />
-
-						<TextView android:id="@+id/_1_hr_4_min_ek1"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="290dp"
-							android:layout_marginTop="119dp"
-							android:layout_width="91.72dp"
-							android:layout_height="26.6dp"
-							android:text="@string/_1_hr_4_min_ek1_string"
-							 />
-
-						<TextView android:id="@+id/from_eltham_station_ek1"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="57dp"
-							android:layout_marginTop="48dp"
-							android:layout_width="174.35dp"
-							android:layout_height="26.6dp"
-							android:text="@string/from_eltham_station_ek1_string"
-							 />
-
-
-						<RelativeLayout android:id="@+id/frame_ek8"
-							android:layout_marginTop="47dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek9"
-								android:background="@drawable/_bg__frame_ek9_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="26.44dp"
-								android:layout_height="24dp" />
-
-							<ImageView android:id="@+id/vector_ek2"
-								android:src="@drawable/vector_ek2"
-								android:contentDescription="vector_ek2"
-								 android:layout_marginStart="4.41dp"
-								android:layout_marginTop="2dp"
-								android:layout_width="17.63dp"
-								android:layout_height="20dp" />
-
-						</RelativeLayout>
-
-						<TextView android:id="@+id/to_melbourne_central_station_ek1"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="57dp"
-							android:layout_marginTop="84dp"
-							android:layout_width="247.06dp"
-							android:layout_height="26.6dp"
-							android:text="@string/to_melbourne_central_station_ek1_string"
-							 />
-
-
-						<RelativeLayout android:id="@+id/frame_ek10"
-							android:layout_marginTop="83dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek11"
-								android:background="@drawable/_bg__frame_ek11_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="26.44dp"
-								android:layout_height="24dp" />
-
-							<ImageView android:id="@+id/vector_ek3"
-								android:src="@drawable/vector_ek3"
-								android:contentDescription="vector_ek3"
-								 android:layout_marginStart="4.41dp"
-								android:layout_marginTop="2dp"
-								android:layout_width="17.63dp"
-								android:layout_height="20dp" />
-
-						</RelativeLayout>
-
-					</RelativeLayout>
-
-				</RelativeLayout>
-
-				<ImageView android:id="@+id/header"
-					android:src="@drawable/header"
-					android:contentDescription="header"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="428dp"
-					android:layout_height="103dp" />
-
-
-				<RelativeLayout android:id="@+id/iphone_status_bar"
-					android:layout_marginTop="0dp"
-					android:layout_marginStart="0dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/_bg__iphone_status_bar_ek1"
-						android:background="@drawable/_bg__iphone_status_bar_ek1_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="391dp"
-						android:layout_height="46dp" />
-
-
-					<RelativeLayout android:id="@+id/battery"
-						android:layout_marginTop="16.6dp"
-						android:layout_marginStart="347.2dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__battery_ek1"
-							android:background="@drawable/_bg__battery_ek1_shape"
-							 android:layout_marginStart="-347dp"
-							android:layout_marginTop="-17dp"
-							android:layout_width="27.23dp"
-							android:layout_height="13dp" />
-
-						<View   android:id="@+id/border"
-							android:background="@drawable/border_shape"
-							 android:alpha="0.35"
-							 android:layout_marginStart="-1dp"
-							android:layout_marginTop="-1dp"
-							android:layout_width="25dp"
-							android:layout_height="13dp" />
-
-						<ImageView android:id="@+id/cap"
-							android:src="@drawable/cap"
-							android:contentDescription="cap"
-							 android:alpha="0.40000000596046"
-							android:layout_marginStart="26dp"
-							android:layout_marginTop="5dp"
-							android:layout_width="1.33dp"
-							android:layout_height="4dp" />
-
-						<View   android:id="@+id/capacity"
-							android:background="@drawable/capacity_shape"
-							 android:layout_marginStart="2dp"
-							android:layout_marginTop="2dp"
-							android:layout_width="21dp"
-							android:layout_height="9dp" />
-
-					</RelativeLayout>
-
-					<ImageView android:id="@+id/wifi"
-						android:src="@drawable/wifi"
-						android:contentDescription="wifi"
-						 android:layout_marginStart="323.13dp"
-						android:layout_marginTop="17.2dp"
-						android:layout_width="17.05dp"
-						android:layout_height="12.1dp" />
-
-					<ImageView android:id="@+id/cellular_connection"
-						android:src="@drawable/cellular_connection"
-						android:contentDescription="cellular_connection"
-						 android:layout_marginStart="296.56dp"
-						android:layout_marginTop="17.1dp"
-						android:layout_width="19.1dp"
-						android:layout_height="12dp" />
-
-
-					<RelativeLayout android:id="@+id/time_style"
-						android:layout_marginTop="14dp"
-						android:layout_marginStart="16dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__time_style_ek1"
-							android:background="@drawable/_bg__time_style_ek1_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="54dp"
-							android:layout_height="20dp" />
-
-						<TextView android:id="@+id/time"
-							android:layout_gravity="center_horizontal|center"
-							android:gravity="center"
-							android:textSize="17sp"
-							android:textColor="@color/_bg__group_17_ek1_color"
-							android:layout_marginLeft="-3dp"
-							android:layout_marginTop="-2dp"
-							android:layout_width="61dp"
-							android:layout_height="26.7dp"
-							android:text="@string/time_string"
-							 />
-
-					</RelativeLayout>
-
 				</RelativeLayout>
 
 
-				<RelativeLayout android:id="@+id/bars_home_indicator"
-					android:layout_marginTop="892dp"
-					android:layout_marginStart="144dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/_bg__bars_home_indicator_ek1"
-						android:background="@drawable/_bg__bars_home_indicator_ek1_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="140dp"
-						android:layout_height="34dp" />
-
-					<View   android:id="@+id/home_indicator"
-						android:background="@drawable/home_indicator_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="21dp"
-						android:layout_width="140dp"
-						android:layout_height="5dp" />
-
-				</RelativeLayout>
-
-
-				<RelativeLayout android:id="@+id/group_15_ek2"
-					android:layout_marginTop="163dp"
+				<RelativeLayout android:id="@+id/trip_parta_ek2"
+					android:layout_marginTop="695dp"
 					android:layout_marginStart="24dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/_bg__group_15_ek3"
-						android:background="@drawable/_bg__group_15_ek3_shape"
+					<View   android:id="@+id/_bg__trip_parta_ek3"
+						android:background="@drawable/_bg__trip_parta_ek3_shape"
 						 android:layout_marginStart="-24dp"
-						android:layout_marginTop="-163dp"
+						android:layout_marginTop="-695dp"
 						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
-					<View   android:id="@+id/rectangle_5_ek2"
-						android:background="@drawable/rectangle_5_ek2_shape"
+					<View   android:id="@+id/tripa_ek1"
+						android:background="@drawable/tripa_ek1_shape"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
 						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
 
-					<RelativeLayout android:id="@+id/frame_ek12"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_location_ek2"
 						android:layout_marginTop="17dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek13"
-							android:background="@drawable/_bg__frame_ek13_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_location_ek3"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="17.63dp"
 							android:layout_height="16dp" />
 
-						<ImageView android:id="@+id/subtract_ek2"
-							android:src="@drawable/subtract_ek2"
-							android:contentDescription="subtract_ek2"
+						<ImageView android:id="@+id/location_ek1"
+							android:src="@drawable/location"
+							android:contentDescription="location_ek1"
+							 android:layout_marginStart="1.94dp"
+							android:layout_marginTop="0.33dp"
+							android:layout_width="11.75dp"
+							android:layout_height="13.33dp" />
+
+					</RelativeLayout>
+
+					<TextView android:id="@+id/hurstbridge_line_ek1"
+						android:textSize="14sp"
+						android:textColor="@color/hurstbridge_line_color"
+						android:layout_marginLeft="48dp"
+						android:layout_marginTop="16dp"
+						android:layout_width="217.21dp"
+						android:layout_height="23.4dp"
+						android:text="@string/hurstbridge_line_ek1_string"
+						 />
+
+					<TextView android:id="@+id/_12_15_pm___1_19_pm_ek1"
+						android:textStyle="bold"
+						android:textSize="16sp"
+						android:textColor="@color/_bg__trip_parta_ek1_color"
+						android:layout_marginLeft="18dp"
+						android:layout_marginTop="119dp"
+						android:layout_width="166.63dp"
+						android:layout_height="26.6dp"
+						android:text="@string/_12_15_pm___1_19_pm_ek1_string"
+						 />
+
+					<TextView android:id="@+id/_1_hr_4_min_ek1"
+						android:textSize="16sp"
+						android:textColor="@color/hurstbridge_line_color"
+						android:layout_marginLeft="290dp"
+						android:layout_marginTop="119dp"
+						android:layout_width="91.72dp"
+						android:layout_height="26.6dp"
+						android:text="@string/_1_hr_4_min_ek1_string"
+						 />
+
+					<TextView android:id="@+id/from_victoria_ek1"
+						android:textSize="16sp"
+						android:textColor="@color/hurstbridge_line_color"
+						android:layout_marginLeft="57dp"
+						android:layout_marginTop="48dp"
+						android:layout_width="174.35dp"
+						android:layout_height="26.6dp"
+						android:text="@string/from_victoria_ek1_string"
+						 />
+
+
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek4"
+						android:layout_marginTop="47dp"
+						android:layout_marginStart="18dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek5"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="26.44dp"
+							android:layout_height="24dp" />
+
+						<ImageView android:id="@+id/vector_ek2"
+							android:src="@drawable/trip_from"
+							android:contentDescription="vector_ek2"
+							 android:layout_marginStart="4.41dp"
+							android:layout_marginTop="2dp"
+							android:layout_width="17.63dp"
+							android:layout_height="20dp" />
+
+					</RelativeLayout>
+
+					<TextView android:id="@+id/to_melbourne_central_station_ek1"
+						android:textSize="16sp"
+						android:textColor="@color/hurstbridge_line_color"
+						android:layout_marginLeft="57dp"
+						android:layout_marginTop="84dp"
+						android:layout_width="247.06dp"
+						android:layout_height="26.6dp"
+						android:text="@string/to_melbourne_central_station_ek1_string"
+						 />
+
+
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek6"
+						android:layout_marginTop="83dp"
+						android:layout_marginStart="18dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek7"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="26.44dp"
+							android:layout_height="24dp" />
+
+						<ImageView android:id="@+id/vector_ek3"
+							android:src="@drawable/trip_to"
+							android:contentDescription="vector_ek3"
+							 android:layout_marginStart="4.41dp"
+							android:layout_marginTop="2dp"
+							android:layout_width="17.63dp"
+							android:layout_height="20dp" />
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+
+				<RelativeLayout android:id="@+id/trip_filter"
+					android:layout_marginTop="103dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg__trip_filter_ek1"
+						android:background="@drawable/_bg__trip_filter_ek1_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="428dp"
+						android:layout_height="54dp" />
+
+
+					<RelativeLayout android:id="@+id/trip_sort_button"
+						android:layout_marginTop="5dp"
+						android:layout_marginStart="360dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg__trip_sort_button_ek1"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="44dp"
+							android:layout_height="44dp" />
+
+
+						<RelativeLayout android:id="@+id/trip_sort_frame"
+							android:layout_marginTop="10dp"
+							android:layout_marginStart="10dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							>
+
+							<View   android:id="@+id/_bg__trip_sort_frame_ek1"
+								 android:layout_marginStart="0dp"
+								android:layout_marginTop="0dp"
+								android:layout_width="24dp"
+								android:layout_height="24dp" />
+
+							<ImageView android:id="@+id/trip_sort_vector"
+								android:src="@drawable/trip_sort_vector"
+								android:contentDescription="trip_sort_vector"
+								 android:layout_marginStart="1.33dp"
+								android:layout_marginTop="4.33dp"
+								android:layout_width="19.67dp"
+								android:layout_height="13.67dp" />
+
+						</RelativeLayout>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+
+				<RelativeLayout android:id="@+id/trip_parta_ek4"
+					android:layout_marginTop="520dp"
+					android:layout_marginStart="24dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/_bg__trip_parta_ek5"
+						android:background="@drawable/_bg__trip_parta_ek5_shape"
+						 android:layout_marginStart="-24dp"
+						android:layout_marginTop="-520dp"
+						android:layout_width="376.78dp"
+						android:layout_height="157dp" />
+
+					<View   android:id="@+id/tripa_ek2"
+						android:background="@drawable/tripa_ek2_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="376.78dp"
+						android:layout_height="157dp" />
+
+
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_location_ek4"
+						android:layout_marginTop="17dp"
+						android:layout_marginStart="18dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg__trip_frame_a_icon_location_ek5"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="17.63dp"
+							android:layout_height="16dp" />
+
+						<ImageView android:id="@+id/location_ek2"
+							android:src="@drawable/location"
+							android:contentDescription="location_ek2"
 							 android:layout_marginStart="1.94dp"
 							android:layout_marginTop="0.33dp"
 							android:layout_width="11.75dp"
@@ -534,7 +458,7 @@
 					<TextView android:id="@+id/_12_15_pm___1_19_pm_ek2"
 						android:textStyle="bold"
 						android:textSize="16sp"
-						android:textColor="@color/_bg__group_17_ek1_color"
+						android:textColor="@color/_bg__trip_parta_ek1_color"
 						android:layout_marginLeft="18dp"
 						android:layout_marginTop="119dp"
 						android:layout_width="166.63dp"
@@ -552,33 +476,32 @@
 						android:text="@string/_1_hr_4_min_ek2_string"
 						 />
 
-					<TextView android:id="@+id/from_victoria"
+					<TextView android:id="@+id/from_victoria_ek2"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
 						android:layout_marginLeft="57dp"
 						android:layout_marginTop="48dp"
 						android:layout_width="174.35dp"
 						android:layout_height="26.6dp"
-						android:text="@string/from_victoria_string"
+						android:text="@string/from_victoria_ek2_string"
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek14"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek8"
 						android:layout_marginTop="47dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek15"
-							android:background="@drawable/_bg__frame_ek15_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek9"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
 						<ImageView android:id="@+id/vector_ek4"
-							android:src="@drawable/vector_ek4"
+							android:src="@drawable/trip_from"
 							android:contentDescription="vector_ek4"
 							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
@@ -598,22 +521,21 @@
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek16"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek10"
 						android:layout_marginTop="83dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek17"
-							android:background="@drawable/_bg__frame_ek17_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek11"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
 						<ImageView android:id="@+id/vector_ek5"
-							android:src="@drawable/vector_ek5"
+							android:src="@drawable/trip_to"
 							android:contentDescription="vector_ek5"
 							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
@@ -625,404 +547,44 @@
 				</RelativeLayout>
 
 
-				<RelativeLayout android:id="@+id/group_16"
-					android:layout_marginTop="332dp"
+				<RelativeLayout android:id="@+id/trip_parta_ek6"
+					android:layout_marginTop="341dp"
 					android:layout_marginStart="24dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/_bg__group_16_ek1"
-						android:background="@drawable/_bg__group_16_ek1_shape"
+					<View   android:id="@+id/_bg__trip_parta_ek7"
+						android:background="@drawable/_bg__trip_parta_ek7_shape"
 						 android:layout_marginStart="-24dp"
-						android:layout_marginTop="-332dp"
+						android:layout_marginTop="-341dp"
 						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
-					<View   android:id="@+id/rectangle_5_ek3"
-						android:background="@drawable/rectangle_5_ek3_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="342dp"
-						android:layout_height="157dp" />
-
-
-					<RelativeLayout android:id="@+id/frame_ek18"
-						android:layout_marginTop="17dp"
-						android:layout_marginStart="16dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__frame_ek19"
-							android:background="@drawable/_bg__frame_ek19_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="16dp"
-							android:layout_height="16dp" />
-
-						<ImageView android:id="@+id/subtract_ek3"
-							android:src="@drawable/subtract_ek3"
-							android:contentDescription="subtract_ek3"
-							 android:layout_marginStart="1.67dp"
-							android:layout_marginTop="0.33dp"
-							android:layout_width="10.67dp"
-							android:layout_height="13.33dp" />
-
-					</RelativeLayout>
-
-					<TextView android:id="@+id/hurstbridge_line_ek3"
-						android:textSize="14sp"
-						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="44dp"
-						android:layout_marginTop="16dp"
-						android:layout_width="198.4dp"
-						android:layout_height="23.4dp"
-						android:text="@string/hurstbridge_line_ek3_string"
-						 />
-
-					<TextView android:id="@+id/_12_15_pm___1_19_pm_ek3"
-						android:textStyle="bold"
-						android:textSize="16sp"
-						android:textColor="@color/_bg__group_17_ek1_color"
-						android:layout_marginLeft="16dp"
-						android:layout_marginTop="119dp"
-						android:layout_width="152.6dp"
-						android:layout_height="26.6dp"
-						android:text="@string/_12_15_pm___1_19_pm_ek3_string"
-						 />
-
-					<TextView android:id="@+id/_1_hr_4_min_ek3"
-						android:textSize="16sp"
-						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="284dp"
-						android:layout_marginTop="119dp"
-						android:layout_width="84.6dp"
-						android:layout_height="26.6dp"
-						android:text="@string/_1_hr_4_min_ek3_string"
-						 />
-
-					<TextView android:id="@+id/from_eltham_station_ek2"
-						android:textSize="16sp"
-						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="52dp"
-						android:layout_marginTop="48dp"
-						android:layout_width="159.6dp"
-						android:layout_height="26.6dp"
-						android:text="@string/from_eltham_station_ek2_string"
-						 />
-
-
-					<RelativeLayout android:id="@+id/frame_ek20"
-						android:layout_marginTop="47dp"
-						android:layout_marginStart="16dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__frame_ek21"
-							android:background="@drawable/_bg__frame_ek21_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="24dp"
-							android:layout_height="24dp" />
-
-						<ImageView android:id="@+id/vector_ek6"
-							android:src="@drawable/vector_ek6"
-							android:contentDescription="vector_ek6"
-							 android:layout_marginStart="4dp"
-							android:layout_marginTop="2dp"
-							android:layout_width="16dp"
-							android:layout_height="20dp" />
-
-					</RelativeLayout>
-
-					<TextView android:id="@+id/to_melbourne_central_station_ek3"
-						android:textSize="16sp"
-						android:textColor="@color/hurstbridge_line_color"
-						android:layout_marginLeft="52dp"
-						android:layout_marginTop="84dp"
-						android:layout_width="225.6dp"
-						android:layout_height="26.6dp"
-						android:text="@string/to_melbourne_central_station_ek3_string"
-						 />
-
-
-					<RelativeLayout android:id="@+id/frame_ek22"
-						android:layout_marginTop="83dp"
-						android:layout_marginStart="16dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__frame_ek23"
-							android:background="@drawable/_bg__frame_ek23_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="24dp"
-							android:layout_height="24dp" />
-
-						<ImageView android:id="@+id/vector_ek7"
-							android:src="@drawable/vector_ek7"
-							android:contentDescription="vector_ek7"
-							 android:layout_marginStart="4dp"
-							android:layout_marginTop="2dp"
-							android:layout_width="16dp"
-							android:layout_height="20dp" />
-
-					</RelativeLayout>
-
-
-					<RelativeLayout android:id="@+id/group_15_ek4"
-						android:layout_marginTop="0dp"
-						android:layout_marginStart="0dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__group_15_ek5"
-							android:background="@drawable/_bg__group_15_ek5_shape"
-							 android:layout_marginStart="-24dp"
-							android:layout_marginTop="-332dp"
-							android:layout_width="376.78dp"
-							android:layout_height="157dp" />
-
-						<View   android:id="@+id/rectangle_5_ek4"
-							android:background="@drawable/rectangle_5_ek4_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="376.78dp"
-							android:layout_height="157dp" />
-
-
-						<RelativeLayout android:id="@+id/frame_ek24"
-							android:layout_marginTop="17dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek25"
-								android:background="@drawable/_bg__frame_ek25_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="17.63dp"
-								android:layout_height="16dp" />
-
-							<ImageView android:id="@+id/subtract_ek4"
-								android:src="@drawable/subtract_ek4"
-								android:contentDescription="subtract_ek4"
-								 android:layout_marginStart="1.94dp"
-								android:layout_marginTop="0.33dp"
-								android:layout_width="11.75dp"
-								android:layout_height="13.33dp" />
-
-						</RelativeLayout>
-
-						<TextView android:id="@+id/hurstbridge_line_ek4"
-							android:textSize="14sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="48dp"
-							android:layout_marginTop="16dp"
-							android:layout_width="217.21dp"
-							android:layout_height="23.4dp"
-							android:text="@string/hurstbridge_line_ek4_string"
-							 />
-
-						<TextView android:id="@+id/_12_15_pm___1_19_pm_ek4"
-							android:textStyle="bold"
-							android:textSize="16sp"
-							android:textColor="@color/_bg__group_17_ek1_color"
-							android:layout_marginLeft="18dp"
-							android:layout_marginTop="119dp"
-							android:layout_width="166.63dp"
-							android:layout_height="26.6dp"
-							android:text="@string/_12_15_pm___1_19_pm_ek4_string"
-							 />
-
-						<TextView android:id="@+id/_1_hr_4_min_ek4"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="290dp"
-							android:layout_marginTop="120dp"
-							android:layout_width="91.72dp"
-							android:layout_height="26.6dp"
-							android:text="@string/_1_hr_4_min_ek4_string"
-							 />
-
-						<TextView android:id="@+id/from_eltham_station_ek3"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="57dp"
-							android:layout_marginTop="48dp"
-							android:layout_width="174.35dp"
-							android:layout_height="26.6dp"
-							android:text="@string/from_eltham_station_ek3_string"
-							 />
-
-
-						<RelativeLayout android:id="@+id/frame_ek26"
-							android:layout_marginTop="47dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek27"
-								android:background="@drawable/_bg__frame_ek27_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="26.44dp"
-								android:layout_height="24dp" />
-
-							<ImageView android:id="@+id/vector_ek8"
-								android:src="@drawable/vector_ek8"
-								android:contentDescription="vector_ek8"
-								 android:layout_marginStart="4.41dp"
-								android:layout_marginTop="2dp"
-								android:layout_width="17.63dp"
-								android:layout_height="20dp" />
-
-						</RelativeLayout>
-
-						<TextView android:id="@+id/to_melbourne_central_station_ek4"
-							android:textSize="16sp"
-							android:textColor="@color/hurstbridge_line_color"
-							android:layout_marginLeft="57dp"
-							android:layout_marginTop="84dp"
-							android:layout_width="247.06dp"
-							android:layout_height="26.6dp"
-							android:text="@string/to_melbourne_central_station_ek4_string"
-							 />
-
-
-						<RelativeLayout android:id="@+id/frame_ek28"
-							android:layout_marginTop="83dp"
-							android:layout_marginStart="18dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek29"
-								android:background="@drawable/_bg__frame_ek29_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="26.44dp"
-								android:layout_height="24dp" />
-
-							<ImageView android:id="@+id/vector_ek9"
-								android:src="@drawable/vector_ek9"
-								android:contentDescription="vector_ek9"
-								 android:layout_marginStart="4.41dp"
-								android:layout_marginTop="2dp"
-								android:layout_width="17.63dp"
-								android:layout_height="20dp" />
-
-						</RelativeLayout>
-
-					</RelativeLayout>
-
-				</RelativeLayout>
-
-
-				<RelativeLayout android:id="@+id/filter_bar"
-					android:layout_marginTop="103dp"
-					android:layout_marginStart="0dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/_bg__filter_bar_ek1"
-						android:background="@drawable/_bg__filter_bar_ek1_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="428dp"
-						android:layout_height="54dp" />
-
-
-					<RelativeLayout android:id="@+id/button_1"
-						android:layout_marginTop="5dp"
-						android:layout_marginStart="360dp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/_bg__button_1_ek1"
-							android:background="@drawable/_bg__button_1_ek1_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="44dp"
-							android:layout_height="44dp" />
-
-
-						<RelativeLayout android:id="@+id/frame_ek30"
-							android:layout_marginTop="10dp"
-							android:layout_marginStart="10dp"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							>
-
-							<View   android:id="@+id/_bg__frame_ek31"
-								android:background="@drawable/_bg__frame_ek31_shape"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
-								android:layout_width="24dp"
-								android:layout_height="24dp" />
-
-							<ImageView android:id="@+id/vector_ek10"
-								android:src="@drawable/vector_ek10"
-								android:contentDescription="vector_ek10"
-								 android:layout_marginStart="1.33dp"
-								android:layout_marginTop="4.33dp"
-								android:layout_width="19.67dp"
-								android:layout_height="13.67dp" />
-
-						</RelativeLayout>
-
-					</RelativeLayout>
-
-				</RelativeLayout>
-
-
-				<RelativeLayout android:id="@+id/group_18"
-					android:layout_marginTop="674dp"
-					android:layout_marginStart="26dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/_bg__group_18_ek1"
-						android:background="@drawable/_bg__group_18_ek1_shape"
-						 android:layout_marginStart="-26dp"
-						android:layout_marginTop="-674dp"
-						android:layout_width="376.78dp"
-						android:layout_height="157dp" />
-
-					<View   android:id="@+id/rectangle_5_ek5"
-						android:background="@drawable/rectangle_5_ek5_shape"
+					<View   android:id="@+id/tripa_ek3"
+						android:background="@drawable/tripa_ek3_shape"
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
 						android:layout_width="376.78dp"
 						android:layout_height="157dp" />
 
 
-					<RelativeLayout android:id="@+id/frame_ek32"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_location_ek6"
 						android:layout_marginTop="17dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek33"
-							android:background="@drawable/_bg__frame_ek33_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_location_ek7"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="17.63dp"
 							android:layout_height="16dp" />
 
-						<ImageView android:id="@+id/subtract_ek5"
-							android:src="@drawable/subtract_ek5"
-							android:contentDescription="subtract_ek5"
+						<ImageView android:id="@+id/location_ek3"
+							android:src="@drawable/location"
+							android:contentDescription="location_ek3"
 							 android:layout_marginStart="1.94dp"
 							android:layout_marginTop="0.33dp"
 							android:layout_width="11.75dp"
@@ -1030,65 +592,64 @@
 
 					</RelativeLayout>
 
-					<TextView android:id="@+id/hurstbridge_line_ek5"
+					<TextView android:id="@+id/hurstbridge_line_ek3"
 						android:textSize="14sp"
 						android:textColor="@color/hurstbridge_line_color"
 						android:layout_marginLeft="48dp"
 						android:layout_marginTop="16dp"
 						android:layout_width="217.21dp"
 						android:layout_height="23.4dp"
-						android:text="@string/hurstbridge_line_ek5_string"
+						android:text="@string/hurstbridge_line_ek3_string"
 						 />
 
-					<TextView android:id="@+id/_12_15_pm___1_19_pm_ek5"
+					<TextView android:id="@+id/_12_15_pm___1_19_pm_ek3"
 						android:textStyle="bold"
 						android:textSize="16sp"
-						android:textColor="@color/_bg__group_17_ek1_color"
+						android:textColor="@color/_bg__trip_parta_ek1_color"
 						android:layout_marginLeft="18dp"
 						android:layout_marginTop="119dp"
 						android:layout_width="166.63dp"
 						android:layout_height="26.6dp"
-						android:text="@string/_12_15_pm___1_19_pm_ek5_string"
+						android:text="@string/_12_15_pm___1_19_pm_ek3_string"
 						 />
 
-					<TextView android:id="@+id/_1_hr_4_min_ek5"
+					<TextView android:id="@+id/_1_hr_4_min_ek3"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
 						android:layout_marginLeft="290dp"
 						android:layout_marginTop="119dp"
 						android:layout_width="91.72dp"
 						android:layout_height="26.6dp"
-						android:text="@string/_1_hr_4_min_ek5_string"
+						android:text="@string/_1_hr_4_min_ek3_string"
 						 />
 
-					<TextView android:id="@+id/from_eltham_station_ek4"
+					<TextView android:id="@+id/from_victoria_ek3"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
 						android:layout_marginLeft="57dp"
 						android:layout_marginTop="48dp"
 						android:layout_width="174.35dp"
 						android:layout_height="26.6dp"
-						android:text="@string/from_eltham_station_ek4_string"
+						android:text="@string/from_victoria_ek3_string"
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek34"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek12"
 						android:layout_marginTop="47dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek35"
-							android:background="@drawable/_bg__frame_ek35_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek13"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
-						<ImageView android:id="@+id/vector_ek11"
-							android:src="@drawable/vector_ek11"
-							android:contentDescription="vector_ek11"
+						<ImageView android:id="@+id/vector_ek6"
+							android:src="@drawable/trip_from"
+							android:contentDescription="vector_ek6"
 							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
 							android:layout_width="17.63dp"
@@ -1096,34 +657,33 @@
 
 					</RelativeLayout>
 
-					<TextView android:id="@+id/to_melbourne_central_station_ek5"
+					<TextView android:id="@+id/to_melbourne_central_station_ek3"
 						android:textSize="16sp"
 						android:textColor="@color/hurstbridge_line_color"
 						android:layout_marginLeft="57dp"
 						android:layout_marginTop="84dp"
 						android:layout_width="247.06dp"
 						android:layout_height="26.6dp"
-						android:text="@string/to_melbourne_central_station_ek5_string"
+						android:text="@string/to_melbourne_central_station_ek3_string"
 						 />
 
 
-					<RelativeLayout android:id="@+id/frame_ek36"
+					<RelativeLayout android:id="@+id/trip_frame_a_icon_ek14"
 						android:layout_marginTop="83dp"
 						android:layout_marginStart="18dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						>
 
-						<View   android:id="@+id/_bg__frame_ek37"
-							android:background="@drawable/_bg__frame_ek37_shape"
+						<View   android:id="@+id/_bg__trip_frame_a_icon_ek15"
 							 android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
 							android:layout_width="26.44dp"
 							android:layout_height="24dp" />
 
-						<ImageView android:id="@+id/vector_ek12"
-							android:src="@drawable/vector_ek12"
-							android:contentDescription="vector_ek12"
+						<ImageView android:id="@+id/vector_ek7"
+							android:src="@drawable/trip_to"
+							android:contentDescription="vector_ek7"
 							 android:layout_marginStart="4.41dp"
 							android:layout_marginTop="2dp"
 							android:layout_width="17.63dp"
