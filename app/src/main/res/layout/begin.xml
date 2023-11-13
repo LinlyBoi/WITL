@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".begin_activity">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:fillViewport="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+				<RelativeLayout
+					android:id="@+id/page_getinh_started_ek1"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintEnd_toEndOf="parent">
+
+					<View
+						android:id="@+id/_bg__begin_ek2"
+						android:layout_width="0dp"
+						android:layout_height="0dp"
+						app:layout_constraintTop_toTopOf="parent"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						android:background="@drawable/_bg__begin_ek2_shape" />
+
+
+					<View
+						android:id="@+id/ellipse_10"
+						android:layout_width="0dp"
+						android:layout_height="0dp"
+						app:layout_constraintTop_toTopOf="parent"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						android:background="@drawable/ellipse_10_shape" />
+
+					<ImageView
+						android:id="@+id/image_3"
+						android:layout_width="333dp"
+						android:layout_height="309dp"
+						android:layout_marginStart="38dp"
+						android:layout_marginTop="350dp"
+						android:contentDescription="image_3"
+						android:src="@drawable/image_3" />
+			</RelativeLayout>
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

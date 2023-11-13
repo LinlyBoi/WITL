@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".getinh_started_2_activity">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:fillViewport="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:id="@+id/content_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent">
+
+
+				<RelativeLayout
+					android:id="@+id/page_getinh_started_2_ek1"
+					android:layout_marginTop="0dp"
+					android:layout_marginStart="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View
+						android:id="@+id/_bg__getinh_started_2_ek2"
+						android:background="@drawable/_bg__getinh_started_2_ek2_shape"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="428dp"
+						android:layout_height="926dp" />
+
+					<ImageView
+						android:id="@+id/image_4"
+						android:src="@drawable/image_4"
+						android:contentDescription="image_4"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="-70dp"
+						android:layout_width="428dp"
+						android:layout_height="685dp" />
+
+					</RelativeLayout>
+
+					<ImageView
+						android:id="@+id/rectangle_43"
+						android:src="@drawable/rectangle_43"
+						android:contentDescription="rectangle_43"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="519dp"
+						android:layout_width="428dp"
+						android:layout_height="407dp" />
+
+					<View   android:id=
+						"@+id/_home_indicator"
+						android:background="@drawable/_home_indicator_shape"
+						android:layout_marginStart="155dp"
+						android:layout_marginTop="915dp"
+						android:layout_width="134dp"
+						android:layout_height="5dp" />
+
+					<TextView android:id="@+id/find_your_trains_easily_and_buy_tickets_online_"
+						android:layout_gravity="center_horizontal|center"
+						android:gravity="center"
+						android:textSize="18sp"
+						android:textColor="@color/_bg__iphone_status_bar_ek1_color"
+						android:layout_marginLeft="25dp"
+						android:layout_marginTop="636dp"
+						android:layout_width="379dp"
+						android:layout_height="51.8dp"
+						android:text="@string/find_your_trains_easily_and_buy_tickets_online__string"
+						 />
+
+					<View   android:id="@+id/_rectangle_8"
+						android:background="@drawable/_rectangle_8_shape"
+						 android:layout_marginStart="28dp"
+						android:layout_marginTop="785dp"
+						android:layout_width="372dp"
+						android:layout_height="60dp" />
+
+
+					<RelativeLayout android:id="@+id/group_12"
+						android:layout_marginTop="787dp"
+						android:layout_marginStart="185dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg___group_12_ek1"
+							android:background="@drawable/_bg___group_12_ek1_shape"
+							 android:layout_marginStart="-185dp"
+							android:layout_marginTop="-787dp"
+							android:layout_width="57dp"
+							android:layout_height="55dp" />
+
+						<TextView android:id="@+id/next"
+							android:textStyle="bold"
+							android:textSize="22sp"
+							android:textColor="@color/_bg__getinh_started_2_ek2_color"
+							android:layout_marginLeft="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="75.2dp"
+							android:layout_height="61.2dp"
+							android:text="@string/next_string"
+							 />
+
+					</RelativeLayout>
+
+					<TextView android:id="@+id/find_your_train_easily"
+						android:textStyle="bold"
+						android:textSize="24sp"
+						android:textColor="@color/_bg__iphone_status_bar_ek1_color"
+						android:layout_marginLeft="98dp"
+						android:layout_marginTop="560dp"
+						android:layout_width="251.4dp"
+						android:layout_height="30.4dp"
+						android:text="@string/find_your_train_easily_string"
+						 />
+
+
+					<RelativeLayout android:id="@+id/group_16"
+						android:layout_marginTop="68dp"
+						android:layout_marginStart="339dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg___group_16_ek1"
+							android:background="@drawable/_bg___group_16_ek1_shape"
+							 android:layout_marginStart="-339dp"
+							android:layout_marginTop="-68dp"
+							android:layout_width="60.21dp"
+							android:layout_height="23dp" />
+
+						<TextView android:id="@+id/skip"
+							android:textSize="22sp"
+							android:textColor="@color/_bg__getinh_started_2_ek2_color"
+							android:layout_marginLeft="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="60.2dp"
+							android:layout_height="29.2dp"
+							android:text="@string/skip_string"
+							 />
+
+						<ImageView android:id="@+id/vector"
+							android:src="@drawable/vector"
+							android:contentDescription="vector"
+							 android:layout_marginStart="50dp"
+							android:layout_marginTop="4dp"
+							android:layout_width="10.21dp"
+							android:layout_height="17.5dp" />
+
+					</RelativeLayout>
+
+
+					<RelativeLayout android:id="@+id/group_13"
+						android:layout_marginTop="492dp"
+						android:layout_marginStart="191dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						>
+
+						<View   android:id="@+id/_bg__group_13_ek1"
+							android:background="@drawable/_bg__group_13_ek1_shape"
+							 android:layout_marginStart="-191dp"
+							android:layout_marginTop="-492dp"
+							android:layout_width="46dp"
+							android:layout_height="12dp" />
+
+						<View   android:id="@+id/ellipse_12"
+							android:background="@drawable/ellipse_12_shape"
+							 android:layout_marginStart="17dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="11.93dp"
+							android:layout_height="12dp" />
+
+						<View   android:id="@+id/ellipse_14"
+							android:background="@drawable/ellipse_14_shape"
+							 android:alpha="0.5"
+							 android:layout_marginStart="0dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="11.93dp"
+							android:layout_height="12dp" />
+
+						<View   android:id="@+id/ellipse_13"
+							android:background="@drawable/ellipse_13_shape"
+							 android:alpha="0.5"
+							 android:layout_marginStart="34dp"
+							android:layout_marginTop="0dp"
+							android:layout_width="11.93dp"
+							android:layout_height="12dp" />
+
+				</RelativeLayout>
+			</RelativeLayout>
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
