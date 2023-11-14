@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyApp_1"
+rootProject.name = "WITL"
 include(":app")

@@ -25,7 +25,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-	public class begin_activity extends Activity {
+	public class begin_activity extends AppCompatActivity {
 
 		private static final int SPLASH_DURATION = 3000; // 3 seconds
 
