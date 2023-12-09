@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/train_image_3" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:drawableStart="@drawable/baseline_person"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:drawableStart="@drawable/baseline_lock"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="140dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Forog Password?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#2155F3"
+        android:text="Login"
+        android:textColorHint="#2155F3"
+        app:iconTint="#2155F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgetpass"
+        app:rippleColor="#2155F3" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#2155F3"
+        android:backgroundTint="#2155F3"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

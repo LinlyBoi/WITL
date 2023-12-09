@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/baseline_notifications"
+        android:title="Notification"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_schedule"
+        android:icon="@drawable/baseline_schedule"
+        android:title="Schedule"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/action_predict"
+        android:icon="@drawable/baseline_punch_clock_24"
+        android:title="Predict"
+        android:visible="true" />
+</menu>
