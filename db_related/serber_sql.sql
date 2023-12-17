@@ -56,7 +56,7 @@ CREATE TABLE prefers(pref_UID SERIAL,
 -- tram_line   => int ranging 1 -> 4
 -- direction => Boolean, 1 full, 0 not as full
 CREATE TABLE arrivals(
-                     a_id INTEGER,
+                     a_id SERIAL PRIMARY KEY,
                      time_of_day TIME,
                      week_day INTEGER,
                      tram_line INTEGER,
