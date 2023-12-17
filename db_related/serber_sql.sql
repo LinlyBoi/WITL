@@ -55,7 +55,7 @@ CREATE TABLE prefers(pref_UID SERIAL,
 -- week_day    => varchar as {Mon, Tue, Wed}, Could probs just encode with 0 -> 6
 -- tram_line   => int ranging 1 -> 4
 -- direction => Boolean, 1 full, 0 not as full
-CREATE TABLE arrival(time_of_day TIME,
+CREATE TABLE arrivals(time_of_day TIME,
                      week_day INTEGER,
                      tram_line INTEGER,
                      direction BOOLEAN,
