@@ -4,7 +4,7 @@
 -- last_name  => User's Last Name
 -- U_email    => User's Registered Email
 -- U_password => User's Password
-CREATE TABLE users(U_ID SERIAL PRIMARY KEY,
+CREATE TABLE users(u_id SERIAL PRIMARY KEY,
                   first_name varchar(255) NOT NULL,
                   last_name varchar(255) NOT NULL,
                   U_email varchar(255) NOT NULL UNIQUE,
