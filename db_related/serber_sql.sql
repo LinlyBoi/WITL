@@ -61,7 +61,6 @@ CREATE TABLE arrivals(
                      week_day INTEGER,
                      tram_line INTEGER,
                      direction BOOLEAN,
-                     PRIMARY KEY(week_day,tram_line),
                      CONSTRAINT in_week CHECK (week_day >= 0 AND week_day <= 6),
                      CONSTRAINT valid_line CHECK (tram_line >= 1 AND tram_line <= 4)
                      );
