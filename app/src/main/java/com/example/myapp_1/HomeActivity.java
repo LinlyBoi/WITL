@@ -52,6 +52,9 @@ public class HomeActivity extends AppCompatActivity {
         if (user != null)
             userGreeting.setText("Welcome " + user + "!");
 
+        String response = currentUserThings.getString("response", "");
+        TextView prediction = findViewById(R.id.prediction);
+        prediction.setText(response);
         vec_back.setOnClickListener(view -> {
             Intent newScreen = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(newScreen);

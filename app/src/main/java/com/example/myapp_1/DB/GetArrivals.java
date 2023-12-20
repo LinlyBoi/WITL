@@ -8,7 +8,7 @@ public interface GetArrivals
 {
 //Specify the request type and pass the relative URL//
 
-	@GET("/users")
+	@GET("/arrivals/all")
 
 //Wrap the response in a Call object with the type of the expected result//
 

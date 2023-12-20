@@ -38,47 +38,47 @@ public class Predict extends AppCompatActivity {
         edi_weather = findViewById(R.id.editTextText2);
         btn_pred = findViewById(R.id.button4);
         prog_bar = findViewById(R.id.progressBar);
-        txt_station = findViewById(R.id.textView4);
+        txt_station = findViewById(R.id.prediction);
         txt_pred_time = findViewById(R.id.predicted_time);
 
+        vec_back = findViewById(R.id.predictBackButton);
         vec_back.setOnClickListener(view -> {
             Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(newScreen);
         });
 
-        btn_pred.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String station = edi_station.getText().toString();
-                String weather = edi_weather.getText().toString();
+        btn_pred.setOnClickListener(view -> {
+            String station = edi_station.getText().toString();
+            String weather = edi_weather.getText().toString();
 
-                if(station.isEmpty() || weather.isEmpty()) {
-                    Toast.makeText(Predict.this, "Please enter something", Toast.LENGTH_SHORT).show();
-                }else{
-                    // we will pass the input features to the model to predict
-                    // then display predictions
+            if(station.isEmpty() || weather.isEmpty()) {
+                Toast.makeText(Predict.this, "Please enter something", Toast.LENGTH_SHORT).show();
+            }else{
+                // we will pass the input features to the model to predict
+                // then display predictions
 
-                    txt_station.setText(station);
+                txt_station.setText(station);
 
-                    Thread thread = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            for(int i = 0; i < 10; i++){
-                                prog_bar.incrementProgressBy(10);
-                                SystemClock.sleep(500);
-                            }
-                            prog_bar.setVisibility(View.GONE);
-
-                            long currentTimeMillis = System.currentTimeMillis();
-                            // Create a SimpleDateFormat object to format the time
-                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                            // Format the time and set it to the TextView
-                            txt_pred_time.setText(sdf.format(new Date(currentTimeMillis)));
+                Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        for(int i = 0; i < 10; i++){
+                            prog_bar.incrementProgressBy(10);
+                            SystemClock.sleep(500);
                         }
-                    });
-                    thread.start();
+                        prog_bar.setVisibility(View.GONE);
 
-                }
+                        long currentTimeMillis = System.currentTimeMillis();
+                        // Create a SimpleDateFormat object to format the time
+                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                        // Format the time and set it to the TextView
+                        txt_pred_time.setText(sdf.format(new Date(currentTimeMillis)));
+                    }
+                });
+                Intent apiService = new Intent(this, FetchArrival.class);
+                startService(apiService);
+                thread.start();
+
             }
         });
     }
