@@ -1,8 +1,10 @@
 package com.example.myapp_1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,6 +44,10 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+        TextView userGreeting = findViewById(R.id.userGreeting);
+        SharedPreferences currentUserThings = getSharedPreferences("userData", MODE_PRIVATE);
+        String user = currentUserThings.getString("username", "");
+        userGreeting.setText("Welcome " + user + "!");
 
     }
 }
