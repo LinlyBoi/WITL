@@ -1,6 +1,5 @@
 package com.example.myapp_1;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapp_1.DB.DBOperations;
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText username;
@@ -18,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgetpassword;
     Button login;
     Button signup;
-
+    DBOperations dbOperations = new DBOperations(this);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +55,20 @@ public class LoginActivity extends AppCompatActivity {
                 if(username_data.isEmpty() || password_data.isEmpty()){
                     Toast.makeText(LoginActivity.this,"Please fill your data!", Toast.LENGTH_LONG).show();
                 }else{
-                    // Check for user input if in database
-                    // if found go to home page
-                    // else keep in same page bitch
-                    Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
-                    startActivity(newScreen);
+                    if (dbOperations.checkLoginCredentials(username_data, password_data)) {
+                        // Login successful
+                        // Proceed to the next screen or perform other actions
+                        Toast.makeText(LoginActivity.this,"Welcome", Toast.LENGTH_LONG).show();
+                        Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
+                        startActivity(newScreen);
+
+                    } else {
+                        // Login failed
+
+                        Toast.makeText(LoginActivity.this,"Invalid Iformation", Toast.LENGTH_LONG).show();
+
+                    }
+
                 }
 
             }

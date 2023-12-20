@@ -4,7 +4,7 @@
 -- last_name  => User's Last Name
 -- U_email    => User's Registered Email
 -- U_password => User's Password
-CREATE TABLE users(U_ID SERIAL PRIMARY KEY,
+CREATE TABLE users(u_id SERIAL PRIMARY KEY,
                   first_name varchar(255) NOT NULL,
                   last_name varchar(255) NOT NULL,
                   U_email varchar(255) NOT NULL UNIQUE,
@@ -54,12 +54,13 @@ CREATE TABLE prefers(pref_UID SERIAL,
 -- time_of_day => Time object, nanosecond accuracy, y'all handle it idk
 -- week_day    => varchar as {Mon, Tue, Wed}, Could probs just encode with 0 -> 6
 -- tram_line   => int ranging 1 -> 4
--- fill_status => Boolean, 1 full, 0 not as full
-CREATE TABLE arrival(time_of_day TIME,
+-- direction => Boolean, 1 full, 0 not as full
+CREATE TABLE arrivals(
+                     a_id SERIAL PRIMARY KEY,
+                     time_of_day TIME,
                      week_day INTEGER,
                      tram_line INTEGER,
-                     fill_status BOOLEAN
-                     CONSTRAINT ck PRIMARY KEY (week_day,tram_line)
-                     CONSTRAINT in_week CHECK (week_day >= 0 AND week_day <= 6)
+                     direction BOOLEAN,
+                     CONSTRAINT in_week CHECK (week_day >= 0 AND week_day <= 6),
                      CONSTRAINT valid_line CHECK (tram_line >= 1 AND tram_line <= 4)
                      );
