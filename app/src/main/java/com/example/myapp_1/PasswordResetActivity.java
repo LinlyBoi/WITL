@@ -20,7 +20,7 @@ public class PasswordResetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_password_reset);
 
         email = findViewById(R.id.editTextTextEmailAddress);
-        reset = findViewById(R.id.button3);
+        reset = findViewById(R.id.guestButton);
 
 
         reset.setOnClickListener(new View.OnClickListener() {

@@ -29,19 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/homeToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/material_dynamic_primary60"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/homeBackButton"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/baseline_arrow_back_ios"
-        app:title="Home"
-        app:titleCentered="true" />
+        app:srcCompat="@drawable/_vector" />
 
     <TextView
         android:id="@+id/userGreeting"
@@ -59,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/train_image" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/prediction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"

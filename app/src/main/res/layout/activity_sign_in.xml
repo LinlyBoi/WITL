@@ -20,7 +20,7 @@
         app:titleCentered="true" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/predictBackButton"
         android:layout_width="159dp"
         android:layout_height="104dp"
         android:layout_marginTop="100dp"
@@ -50,10 +50,10 @@
         android:drawablePadding="16dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/predictBackButton"
         app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/predictBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/predictBackButton" />
 
     <EditText
         android:id="@+id/editTextText3"

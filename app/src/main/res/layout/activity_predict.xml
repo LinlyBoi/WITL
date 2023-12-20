@@ -7,7 +7,7 @@
     tools:context=".Predict">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/predictBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -135,7 +135,7 @@
         app:layout_constraintTop_toBottomOf="@+id/userGreeting" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/prediction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"

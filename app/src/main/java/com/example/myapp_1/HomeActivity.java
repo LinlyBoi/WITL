@@ -1,8 +1,11 @@
 package com.example.myapp_1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        ImageView vec_back = findViewById(R.id.homeBackButton);
         BottomNavigationView bottomNavigationView = findViewById(R.id.homeBottomView);
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -42,6 +46,20 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+        TextView userGreeting = findViewById(R.id.userGreeting);
+        SharedPreferences currentUserThings = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
+        String user = currentUserThings.getString("username", "");
+        if (user != null)
+            userGreeting.setText("Welcome " + user + "!");
+
+        String response = currentUserThings.getString("response", "");
+        TextView prediction = findViewById(R.id.prediction);
+        prediction.setText(response);
+        vec_back.setOnClickListener(view -> {
+            Intent newScreen = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(newScreen);
+        });
+
 
     }
 }
