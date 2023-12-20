@@ -3,7 +3,6 @@ package com.example.myapp_1;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,52 +35,43 @@ public class LoginActivity extends AppCompatActivity {
         guestLogin= findViewById(R.id.guestButton);
 
         SharedPreferences.Editor editor = currentUserThings.edit();
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent newScreen = new Intent(getApplicationContext(), SigninActivity.class);
-                startActivity(newScreen);
-            }
+        signup.setOnClickListener(v -> {
+            Intent newScreen = new Intent(getApplicationContext(), SigninActivity.class);
+            startActivity(newScreen);
         });
 
-        guestLogin.setOnClickListener(new View.OnClickListener(){
-
-
-            @Override
-            public void onClick(View v) {
-                editor.putString("username", "Guest");
-                Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(newScreen);
-            }
+        guestLogin.setOnClickListener(v -> {
+            editor.putString("username", "Guest");
+            editor.apply();
+            Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(newScreen);
         });
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        login.setOnClickListener(v -> {
 
-                String username_data = username.getText().toString();
-                String password_data = password.getText().toString();
+            String username_data = username.getText().toString();
+            String password_data = password.getText().toString();
 
-                if(username_data.isEmpty() || password_data.isEmpty()){
-                    Toast.makeText(LoginActivity.this,"Please fill your data!", Toast.LENGTH_LONG).show();
-                }else{
-                    if (dbOperations.checkLoginCredentials(username_data, password_data)) {
-                        // Login successful
-                        // Proceed to the next screen or perform other actions
-                        Toast.makeText(LoginActivity.this,"Welcome", Toast.LENGTH_LONG).show();
-                        editor.putString("username", "Guest");
-                        Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
-                        startActivity(newScreen);
+            if(username_data.isEmpty() || password_data.isEmpty()){
+                Toast.makeText(LoginActivity.this,"Please fill your data!", Toast.LENGTH_LONG).show();
+            }else{
+                if (dbOperations.checkLoginCredentials(username_data, password_data)) {
+                    // Login successful
+                    // Proceed to the next screen or perform other actions
+                    Toast.makeText(LoginActivity.this,"Welcome", Toast.LENGTH_LONG).show();
+                    editor.putString("username", username_data);
+                    editor.apply();
+                    Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
+                    startActivity(newScreen);
 
-                    } else {
-                        // Login failed
+                } else {
+                    // Login failed
 
-                        Toast.makeText(LoginActivity.this,"Invalid Iformation", Toast.LENGTH_LONG).show();
-
-                    }
+                    Toast.makeText(LoginActivity.this,"Invalid Iformation", Toast.LENGTH_LONG).show();
 
                 }
 
             }
+
         });
     }
 }

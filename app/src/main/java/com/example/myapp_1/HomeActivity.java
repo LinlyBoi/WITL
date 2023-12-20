@@ -45,9 +45,11 @@ public class HomeActivity extends AppCompatActivity {
                     }
                 });
         TextView userGreeting = findViewById(R.id.userGreeting);
-        SharedPreferences currentUserThings = getSharedPreferences("userData", MODE_PRIVATE);
+        SharedPreferences currentUserThings = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
         String user = currentUserThings.getString("username", "");
-        userGreeting.setText("Welcome " + user + "!");
+        if (user != null)
+            userGreeting.setText("Welcome " + user + "!");
+
 
     }
 }
