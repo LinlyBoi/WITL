@@ -39,6 +39,7 @@ public class FetchArrival extends Service
 				SharedPreferences.Editor editor = sp.edit();
 //				Log.d(TAG, response.body().toString());
 				editor.putString("response", response.body().toString());
+				editor.apply();
 			}
 			//Handle execution failures//
 
