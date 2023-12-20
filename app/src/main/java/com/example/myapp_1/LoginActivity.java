@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapp_1.DB.DBOperations;
 
 public class LoginActivity extends AppCompatActivity {
-    SharedPreferences currentUserThings = getSharedPreferences("UserData", MODE_PRIVATE);
+    SharedPreferences currentUserThings;
 
     EditText username;
     EditText password;
@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        currentUserThings = getSharedPreferences("UserData", MODE_PRIVATE);
         username = findViewById(R.id.editTextText);
         password = findViewById(R.id.editTextTextPassword);
 
