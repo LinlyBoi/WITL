@@ -3,7 +3,6 @@ package com.example.myapp_1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomview);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.homeBottomView);
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -43,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+
     }
 }
 

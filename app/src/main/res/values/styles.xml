@@ -2,7 +2,7 @@
 <resources>
 	<!-- begin styles -->
 
-	<style name="AppTheme" parent="Theme.MaterialComponents.Light">
+	<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
 
 	</style>
 
