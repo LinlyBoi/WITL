@@ -5,8 +5,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.IBinder;
-import android.util.Log;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import com.example.myapp_1.DB.Arrival;
 import com.example.myapp_1.DB.GetArrivals;
@@ -17,11 +17,9 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class FetchArrival extends Service
 {
-	private static final String TAG = "MyActivity";
 	@Override
 	public int onStartCommand(Intent intent, int flags, int Startid) {
 		GetArrivals apiService = RetrofitClient.getRetrofitInstance().create(GetArrivals.class);
@@ -34,16 +32,17 @@ public class FetchArrival extends Service
 
 			//Handle a successful response//
 			@Override
-			public void onResponse(Call<List<Arrival>> call, Response<List<Arrival>> response) {
+			public void onResponse(@NonNull Call<List<Arrival>> call, @NonNull Response<List<Arrival>> response) {
 				SharedPreferences sp = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
 				SharedPreferences.Editor editor = sp.edit();
 //				Log.d(TAG, response.body().toString());
+				assert response.body() != null;
 				editor.putString("response", response.body().toString());
 				editor.apply();
 			}
 			//Handle execution failures//
 
-			public void onFailure(Call<List<Arrival>> call, Throwable throwable) {
+			public void onFailure(@NonNull Call<List<Arrival>> call, @NonNull Throwable throwable) {
 				System.out.println("A");
 			}
 		});
