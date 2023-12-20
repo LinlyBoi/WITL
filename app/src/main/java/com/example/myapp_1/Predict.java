@@ -33,7 +33,7 @@ public class Predict extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_predict);
 
-        vec_back = findViewById(R.id.imageView2);
+        vec_back = findViewById(R.id.predictBackButton);
         edi_station = findViewById(R.id.editTextText);
         edi_weather = findViewById(R.id.editTextText2);
         btn_pred = findViewById(R.id.button4);
@@ -41,12 +41,9 @@ public class Predict extends AppCompatActivity {
         txt_station = findViewById(R.id.textView4);
         txt_pred_time = findViewById(R.id.predicted_time);
 
-        vec_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(newScreen);
-            }
+        vec_back.setOnClickListener(view -> {
+            Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(newScreen);
         });
 
         btn_pred.setOnClickListener(new View.OnClickListener() {

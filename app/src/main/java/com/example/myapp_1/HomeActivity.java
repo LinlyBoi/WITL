@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        ImageView vec_back = findViewById(R.id.homeBackButton);
         BottomNavigationView bottomNavigationView = findViewById(R.id.homeBottomView);
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -49,6 +51,11 @@ public class HomeActivity extends AppCompatActivity {
         String user = currentUserThings.getString("username", "");
         if (user != null)
             userGreeting.setText("Welcome " + user + "!");
+
+        vec_back.setOnClickListener(view -> {
+            Intent newScreen = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(newScreen);
+        });
 
 
     }
