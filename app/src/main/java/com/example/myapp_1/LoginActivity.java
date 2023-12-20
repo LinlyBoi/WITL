@@ -19,7 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgetpassword;
     Button login;
     Button signup;
+
+
     DBOperations dbOperations = new DBOperations(this);
+    Button guestLogin;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         forgetpassword = findViewById(R.id.forgetpass);
         login = findViewById(R.id.button);
         signup = findViewById(R.id.button2);
-
+        guestLogin= findViewById(R.id.button3);
         forgetpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +45,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent newScreen = new Intent(getApplicationContext(), SigninActivity.class);
+                startActivity(newScreen);
+            }
+        });
+
+        guestLogin.setOnClickListener(new View.OnClickListener(){
+
+
+            @Override
+            public void onClick(View v) {
+                Intent newScreen = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(newScreen);
             }
         });
