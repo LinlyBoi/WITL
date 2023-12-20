@@ -7,7 +7,7 @@
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomview"
+        android:id="@+id/homeBottomView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/material_dynamic_primary60"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/homeToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/material_dynamic_primary60"
@@ -44,7 +44,7 @@
         app:titleCentered="true" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/userGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -65,11 +65,11 @@
         android:layout_marginLeft="20dp"
         android:text="Predict your tram arrival time at any station!"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomview"
+        app:layout_constraintBottom_toTopOf="@+id/homeBottomView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/userGreeting"
         app:layout_constraintVertical_bias="0.296" />
 
 

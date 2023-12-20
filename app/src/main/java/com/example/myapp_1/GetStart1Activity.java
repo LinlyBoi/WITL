@@ -26,7 +26,7 @@ public class GetStart1Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent newScreen = new Intent(getApplicationContext(), GetStart2Activity.class);
+                Intent newScreen = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(newScreen);
             }
         });
